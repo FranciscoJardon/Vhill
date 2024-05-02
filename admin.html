@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1,  minimum-scale=1, width=device-width"
+    />
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- ===== ICONOS ===== -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--=============== JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/favv.png" />
+    <title>Vhill</title>
+  </head>
+  <body>
+    <nav class="NavegadorPrincipal">
+        <div class="BarraLogo">
+          <a
+            href="
+                /"
+          >
+            <img src="assets/img/logo2.png" alt="" />
+          </a>
+        </div>
+
+        <div>
+            <a href="">Productos</a>
+        </div>
+
+    </nav>
+
+    <main class="ContenedorMain">
+   
+            
+        <section class="ContenedorGeneral" style="padding: 2rem 1rem; display: flex; align-items: center; justify-content: center;">
+            <form id="form" class="ContendorFurmulario" >
+  
+              <div class="input-field">
+                <input type="text" id="name" name="name" required spellcheck="false">
+                <label class="" for="name">Nombre del Producto</label>
+              </div>
+  
+              <div class="input-field">
+                <input type="color" id="job" name="job" required spellcheck="false">
+                <label class="" for="job">Color Sabor</label>
+              </div>
+              
+              <div class="ContendorInputs">
+              <input type="file" id="files" name="files" multiple required>
+                </div>
+
+              <button type="submit" id="button" class="BtnForm BTING  BtnStyle2" >SEND</button>
+            </form>
+        </section>
+        <div class="ContendorAgentesList" id="dataList"></div>
+
+    </main>
+   
+
+
+
+    
+<script src="assets/js/admin.js"></script>
+
+<style>
+  .ContendorFurmulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .ContendorInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+        
+    
+  .input-field {
+    position: relative;
+  }
+  
+  .input-field input {
+    font-family: Avenir Next !important;
+    width: 500px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 1rem ;
+    padding: 0 15px;
+    border: 2px solid var(--dark-color);
+    background: transparent;
+    color: var(--dark-color) !important;
+    outline: none;
+  }
+
+  .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 1rem ;
+    transform: translateY(-50%);
+    color: var(--dark-color);
+   
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  .input-field input:focus {
+    border: 2px solid var(--dark-color);
+  }
+  
+  .input-field input:focus ~ label,
+  .input-field input:valid ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 5px;
+    background: white; 
+  }
+</style>
+
+  </body>
+</html>
